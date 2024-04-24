@@ -15,7 +15,6 @@ int main()
     int BrahmaMuhurtaMinitueDuration = brahmatotalMinitues + 48;
     float BrahmaMuhurtaHour = float(BrahmaMuhurta) / 60;
     cout << fixed << setprecision(2);
-    cout << "--------------------------" << endl;
-    cout << "Brahma Muhurta will start at :" << BrahmaMuhurtaHour << " AM" << endl;
+    cout << "Brahma Muhurta will start at :" <<BrahmaMuhurtaHour<<" AM"<< endl;
     return 0;
 }
