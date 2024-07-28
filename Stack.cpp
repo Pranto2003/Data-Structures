@@ -12,25 +12,30 @@ int main()
         st[i].push(element);
     }
     cout << "The stack is :" << endl;
-    for (int i = 0; i < sizeof(st) / sizeof(st[0]); i++){
-        cout << st[i].top()<<" ";
+    for (int i = 0; i < sizeof(st) / sizeof(st[0]); i++)
+    {
+        cout << st[i].top() << " ";
     }
     cout << endl;
 
-    for (int i = 0; i < sizeof(st) / sizeof(st[0]); i++){
-        if(!st[i].empty()){
+    for (int i = 0; i < sizeof(st) / sizeof(st[0]); i++)
+    {
+        if (!st[i].empty())
+        {
             st[i].pop();
-            if(!st.empty()){
-                cout << "After pop :" << st.top() << endl;
+            if (st->empty())
+            {
+                cout << "After pop :" << st->top() << endl;
             }
-            else{
+            else
+            {
                 cout << "Stack is empty after pop " << endl;
             }
         }
-        else{
+        else
+        {
             cout << "Stack was empty" << endl;
         }
-        
     }
 
     return 0;
